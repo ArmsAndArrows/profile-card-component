@@ -1,0 +1,139 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+  line-height: 0;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  color: hsl(0, 0%, 59%);
+  background: hsl(185, 75%, 39%);
+  position: relative;
+  overflow: hidden;
+}
+
+.top {
+  position: absolute;
+  width: 300rem;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: soft-light;
+}
+
+.btm {
+  position: absolute;
+  width: 900%;
+  top: 50%;
+  left: 30%;
+  mix-blend-mode: color-dodge;
+}
+
+.card {
+  background-color: rgb(255, 255, 255);
+  display: grid;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+}
+@media only screen and (min-width: 800px) {
+  .card {
+    transform: scale(1.2);
+  }
+}
+.card__illustration {
+  background-size: cover;
+}
+.card__img {
+  border-radius: 50%;
+  border: 5px solid rgb(255, 255, 255);
+  justify-self: center;
+  position: absolute;
+  top: 23%;
+}
+.card__info {
+  border-bottom: 1px solid hsl(0, 0%, 80%);
+  padding-top: 7rem;
+  padding-bottom: 2.5rem;
+}
+.card__info .person {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: hsl(229, 23%, 23%);
+  display: inline-block;
+}
+.card__info .age {
+  font-weight: 400;
+  color: hsl(227, 10%, 46%);
+  margin-left: 1rem;
+}
+.card__info .city {
+  font-size: 1.4rem;
+  margin-top: 0.5rem;
+}
+
+.details {
+  display: flex;
+  justify-content: space-evenly;
+}
+.details__item {
+  font-size: 1.2rem;
+  padding: 2rem;
+}
+.details__item h2 {
+  color: hsl(229, 23%, 23%);
+}
+.details__item p {
+  letter-spacing: 2px;
+  font-size: 1rem;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3MvX2Jhc2Uuc2NzcyIsInN0eWxlLmNvbXAuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQWtCQTs7O0VBR0ksU0FBQTtFQUNBLFVBQUE7RUFDQSxzQkFBQTtBQ2pCSjs7QURvQkE7O0VBRUksZUFBQTtFQUNBLGNBQUE7RUFDQSxjQUFBO0FDakJKOztBRG9CQTtFQUNJLFVBQUE7RUFDQSxlQUFBO0FDakJKOztBRG9CQTs7RUFFSSxZQUFBO0FDakJKOztBRG9CQTs7OztFQUlJLGFBQUE7QUNqQko7O0FEb0JBOzs7Ozs7O0VBT0kseUJBQUE7QUNqQko7O0FEcUJBO0VBQ0ksc0JBQUE7RUFDQSxnQkFBQTtFQUNBLHFDQUFBO0FDbEJKOztBRHFCQTtFQUNJLHFDQUFBO0VBQ0EsZ0JBeERRO0VBeURSLGlCQUFBO0VBQ0EsZ0JBQUE7RUFDQSxtQ0FBQTtFQUNBLGFBQUE7RUFDQSx1QkFBQTtFQUNBLHFCQUFBO0VBQ0Esc0JBckVhO0VBc0ViLDhCQXpFYTtFQTBFYixrQkFBQTtFQUNBLGdCQUFBO0FDbEJKOztBRHVCQTtFQUNJLGtCQUFBO0VBQ0EsYUFBQTtFQUNBLGdDQUFBO0VBQ0EsMEJBQUE7QUNwQko7O0FEdUJBO0VBQ0ksa0JBQUE7RUFDQSxXQUFBO0VBQ0EsUUFBQTtFQUNBLFNBQUE7RUFDQSwyQkFBQTtBQ3BCSjs7QUR3QkE7RUFDSSxvQ0FwR1U7RUFxR1YsYUFBQTtFQUNBLHFCQUFBO0VBQ0EsZ0JBQUE7RUFDQSxrQkFBQTtFQUNBLGtCQUFBO0FDckJKO0FEc0JJO0VBUEo7SUFRUSxxQkFBQTtFQ25CTjtBQUNGO0FEcUJJO0VBQ0ksc0JBQUE7QUNuQlI7QURxQkk7RUFDSSxrQkFBQTtFQUNBLG9DQUFBO0VBQ0Esb0JBQUE7RUFDQSxrQkFBQTtFQUNBLFFBQUE7QUNuQlI7QURxQkk7RUFDSSx3Q0FBQTtFQUNBLGlCQUFBO0VBQ0Esc0JBQUE7QUNuQlI7QURvQlE7RUFDSSxpQkFBQTtFQUNBLGdCQW5IRjtFQW9IRSx5QkEzSG9CO0VBNEhwQixxQkFBQTtBQ2xCWjtBRG9CUTtFQUNJLGdCQXZIQTtFQXdIQSx5QkEvSFk7RUFnSVosaUJBQUE7QUNsQlo7QURvQlE7RUFDSSxpQkFBQTtFQUNBLGtCQUFBO0FDbEJaOztBRHVCQTtFQUNJLGFBQUE7RUFDQSw2QkFBQTtBQ3BCSjtBRHFCSTtFQUNJLGlCQUFBO0VBQ0EsYUFBQTtBQ25CUjtBRG9CUTtFQUNJLHlCQWpKb0I7QUMrSGhDO0FEb0JRO0VBQ0ksbUJBQUE7RUFDQSxlQUFBO0FDbEJaIiwiZmlsZSI6InN0eWxlLnByZWZpeC5jc3MifQ== */

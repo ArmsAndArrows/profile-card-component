@@ -1,0 +1,158 @@
+///Colors
+$color-white: rgb(255, 255, 255);
+$color-black: rgb(0, 0, 0);
+
+$color-darkcyan: hsl(185, 75%, 39%);
+$color-verydarkdesaturatedblue: hsl(229, 23%, 23%);
+$color-darkgrayishblue: hsl(227, 10%, 46%);
+$color-darkgray: hsl(0, 0%, 59%);
+$color-lightgray: hsl(0, 0%, 80%);
+
+///Fonts
+
+$ft-bold: 700;
+$ft-normal: 400;
+
+
+
+///RESETS
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img,
+picture {
+    max-width: 100%;
+    display: block;
+    line-height: 0;
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+///BEGIN
+///
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; ////defines
+    font-family: "Kumbh Sans", sans-serif;
+}
+
+body {
+    font-family: "Kumbh Sans", sans-serif;
+    font-weight: $ft-normal;
+    font-size: 1.8rem;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    color: $color-darkgray;
+    background: $color-darkcyan;
+    position: relative;
+    overflow: hidden;
+}
+
+///images
+///
+.top {
+    position: absolute;
+    width: 300rem;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: soft-light;
+}
+
+.btm {
+    position: absolute;
+    width: 900%;
+    top: 50%;
+    left: 30%;
+    mix-blend-mode: color-dodge;
+}
+
+///card  
+.card {
+    background-color: $color-white;
+    display: grid;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    @media only screen and (min-width: 800px) {
+        transform: scale(1.2);
+    }
+
+    &__illustration {
+        background-size: cover;
+    }
+    &__img {
+        border-radius: 50%;
+        border: 5px solid $color-white;
+        justify-self: center;
+        position: absolute;
+        top: 23%;
+    }
+    &__info {
+        border-bottom: 1px solid $color-lightgray;
+        padding-top: 7rem;
+        padding-bottom: 2.5rem;
+        .person {
+            font-size: 1.7rem;
+            font-weight: $ft-bold;
+            color: $color-verydarkdesaturatedblue;
+            display: inline-block;
+        }
+        .age {
+            font-weight: $ft-normal;
+            color: $color-darkgrayishblue;
+            margin-left: 1rem;
+        }
+        .city {
+            font-size: 1.4rem;
+            margin-top: 0.5rem;
+        }
+    }
+}
+
+.details {
+    display: flex;
+    justify-content: space-evenly;
+    &__item {
+        font-size: 1.2rem;
+        padding: 2rem;
+        h2 {
+            color: $color-verydarkdesaturatedblue;
+        }
+        p {
+            letter-spacing: 2px;
+            font-size: 1rem;
+        }
+    }
+}
